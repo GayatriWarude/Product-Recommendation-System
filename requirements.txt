@@ -4,5 +4,5 @@ numpy
 scikit-learn
 Pillow
 requests
-google-search-results
+serpapi
 streamlit-searchbox
