@@ -37,19 +37,20 @@ if "last_search_type" not in st.session_state:
 # =========================================================
 
 try:
-
     API_KEY = st.secrets["SERPAPI_KEY"]
 
-    client = serpapi.Client(
-        api_key=API_KEY
-    )
+    if not API_KEY:
+        st.error("SERPAPI_KEY is empty.")
+        st.stop()
 
-except Exception:
+    client = serpapi.Client(api_key=API_KEY)
 
-    st.error(
-        "SerpApi API key is not configured correctly."
-    )
+except KeyError:
+    st.error("SERPAPI_KEY is missing from Streamlit Secrets.")
+    st.stop()
 
+except Exception as e:
+    st.error(f"SerpApi error: {type(e).__name__}: {e}")
     st.stop()
 
 
