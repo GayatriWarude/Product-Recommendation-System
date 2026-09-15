@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Machine Learning-based Product Recommendation System developed using product ratings, feature engineering, and clustering techniques. It also provides text-based and image-based product search using Streamlit and SerpApi.
+This project is a Machine Learning-based Product Recommendation System developed using product ratings, feature engineering, and clustering techniques. The project analyzes product ratings and creates product clusters. It also provides text-based and image-based product search through an interactive Streamlit application.
 
 ## 🚀 Live Demo
 
@@ -10,14 +10,17 @@ This project is a Machine Learning-based Product Recommendation System developed
 
 ## Features
 
-- Product rating and feature analysis
+- Product rating analysis
 - Exploratory Data Analysis (EDA)
 - Product feature engineering
-- K-Means, Hierarchical, and DBSCAN clustering
+- K-Means clustering
+- Hierarchical clustering
+- DBSCAN clustering
 - Text-based product search
 - Image-based product search
 - Product price, rating, and review details
-- Product images and purchase links
+- Product images
+- Direct purchase links
 - Interactive Streamlit web application
 
 ## Technologies Used
@@ -28,9 +31,9 @@ This project is a Machine Learning-based Product Recommendation System developed
 - Scikit-learn
 - Streamlit
 - SerpApi
+- Pillow
 - Matplotlib
 - Seaborn
-- Pillow
 
 ## Machine Learning Models Used
 
@@ -64,12 +67,22 @@ The Streamlit application allows users to:
 - Upload a product image
 - Find visually similar products
 - View product images
-- View prices, ratings, and reviews
+- View product prices
+- View ratings and reviews
 - Visit product purchase links
+
+## Project Files
+
+- `app.py` – Streamlit application
+- `Product Recommendation System.ipynb` – Machine learning and data analysis
+- `rating_short.csv` – Product rating dataset
+- `product_features.csv` – Processed product features
+- `requirements.txt` – Required Python libraries
+- `.gitignore` – Files excluded from GitHub
 
 ## How to Run the Project
 
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR-GITHUB-REPOSITORY-LINK
+git clone https://github.com/GayatriWarude/product-recommendation-system.git
