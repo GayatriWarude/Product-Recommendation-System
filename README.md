@@ -2,22 +2,23 @@
 
 ## Overview
 
-A machine learning-based product recommendation system built with Python and Streamlit. The project analyzes product ratings and product features using clustering techniques and provides an interactive product search experience.
+This project is a Machine Learning-based Product Recommendation System developed using product ratings, feature engineering, and clustering techniques. It also provides text-based and image-based product search using Streamlit and SerpApi.
 
-The Streamlit application allows users to search for products using **text or an uploaded product image** and displays relevant product results with details such as price, rating, reviews, images, and purchase links.
+## 🚀 Live Demo
+
+[Click here to try the Product Recommendation System](https://appuct-recommendation-system-5pzsamwv2fdm3kjrn4ojgm.streamlit.app/)
 
 ## Features
 
+- Product rating and feature analysis
 - Exploratory Data Analysis (EDA)
 - Product feature engineering
-- Product rating analysis
-- K-Means clustering
-- Hierarchical clustering
-- DBSCAN clustering
+- K-Means, Hierarchical, and DBSCAN clustering
 - Text-based product search
 - Image-based product search
-- Interactive Streamlit interface
-- Product images, prices, ratings, reviews, and purchase links
+- Product price, rating, and review details
+- Product images and purchase links
+- Interactive Streamlit web application
 
 ## Technologies Used
 
@@ -25,24 +26,50 @@ The Streamlit application allows users to search for products using **text or an
 - Pandas
 - NumPy
 - Scikit-learn
-- Matplotlib
-- Seaborn
 - Streamlit
 - SerpApi
+- Matplotlib
+- Seaborn
+- Pillow
 
-## Project Files
+## Machine Learning Models Used
 
-- `Product Recommendation System.ipynb` – EDA, feature engineering, clustering, and model analysis
-- `app.py` – Streamlit application
-- `product_features.csv` – Processed product features and clustering results
-- `rating_short.csv` – Product rating dataset
+| Model | Score | Purpose |
+|---|---:|---|
+| K-Means | 0.648 | Product clustering |
+| Hierarchical Clustering | 0.657 | Product clustering |
+| DBSCAN | 0.934 | Product clustering |
 
-## How to Run
+## Model Selection
 
-1. Clone this repository.
-2. Install the required Python libraries.
-3. Add your SerpApi key to Streamlit secrets.
-4. Run the application:
+K-Means clustering was selected for the final recommendation system because it provides practical and interpretable product groups based on product ratings and rating counts.
+
+## Project Workflow
+
+- Data Loading
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Product Feature Creation
+- Clustering
+- Model Comparison
+- Product Search Integration
+- Streamlit Deployment
+
+## Application
+
+The Streamlit application allows users to:
+
+- Search for products using text
+- Upload a product image
+- Find visually similar products
+- View product images
+- View prices, ratings, and reviews
+- Visit product purchase links
+
+## How to Run the Project
+
+### 1. Clone the Repository
 
 ```bash
-streamlit run app.py
+git clone YOUR-GITHUB-REPOSITORY-LINK
