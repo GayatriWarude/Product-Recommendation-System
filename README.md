@@ -85,4 +85,4 @@ The Streamlit application allows users to:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/GayatriWarude/product-recommendation-system.git
+git clone https://github.com/GayatriWarude/Product-Recommendation-System
